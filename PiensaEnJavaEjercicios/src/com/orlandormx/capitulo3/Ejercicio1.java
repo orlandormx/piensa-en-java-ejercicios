@@ -15,10 +15,17 @@ import static net.mindview.util.Print.*;
  * @author developer
  */
 public class Ejercicio1 {
-    public static void main(String[] args){
+    static void imprimeFormaLarga(String datos){
+        System.out.println(datos);
+    }
     
-        print("Hola mundo");
-        
-        System.out.println("Hola mundo");
+    static void imprimeFormaCorta(String datos){
+        print(datos);
+    }
+    
+    
+    public static void main(String[] args){
+        imprimeFormaCorta("hola mundo corto");
+        imprimeFormaLarga("hola mundo largo");
     }
 }

@@ -3,6 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/*
+Ejercicio 5 no entiendo lo que se pide descripcion en pag 100
+*/
 package com.orlandormx.capitulo4;
 import static com.orlandormx.util.Print.*;
 import java.util.Random;
@@ -16,7 +19,7 @@ public class Ej1y2y3y4y5 {
   //      Ej2.comparaValoresRand();
     //  tener cuidado entra a un bucle infinito
     //    Ej3.comparaValoresRandWhile();
-        Ej4.encuentraNumerosPrimos(410);
+    //    Ej4.encuentraNumerosPrimos(410);
     }
 }
 
@@ -97,4 +100,30 @@ class Ej4{
         }
     }
 
+}
+
+class Ej5{
+    static void comparador(){
+        int valor1 = 5;
+        int valor2 = 10;
+    /*
+        System.out.println(Integer.toBinaryString(VALOR1));
+        System.out.println(Integer.toBinaryString(VALOR2));
+        System.out.println(Integer.toBinaryString(VALOR1 & VALOR2));
+        System.out.println(Integer.toBinaryString(VALOR1 | VALOR2));
+        System.out.println(Integer.toBinaryString(VALOR1 ^ VALOR2));
+        System.out.println(Integer.toBinaryString(~VALOR1));
+        System.out.println(Integer.toBinaryString(~VALOR2));
+        //no se pueden aplicar porque son valores static
+        //System.out.println(Integer.toBinaryString(VALOR1 &= VALOR2));
+        //System.out.println(Integer.toBinaryString(VALOR1 |= VALOR2));
+        //System.out.println(Integer.toBinaryString(VALOR1 ^= VALOR2));
+        */
+    }
+    
+    
+    
+    
+    //exp-booleana ? valor1 : valor 2;
+    
 }

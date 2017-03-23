@@ -18,7 +18,7 @@ public class Ej1y2y3y4y5 {
 //        Ej1.imprimeValores();
   //      Ej2.comparaValoresRand();
     //  tener cuidado entra a un bucle infinito
-    //    Ej3.comparaValoresRandWhile();
+        Ej3.comparaValoresRandWhile();
     //    Ej4.encuentraNumerosPrimos(410);
     }
 }
@@ -59,15 +59,21 @@ class Ej3{
         for(int i = 0; i < valoresRand.length; i++){
             valoresRand[i] = r.nextInt(20);
         }
-        
-        while(true){
-            int i=0;
+        boolean s= true;
+        int i=0;
+        while(s){
+            
             if(valoresRand[i] > cmp)
                 print(valoresRand[i]+" > "+cmp);
             else if(valoresRand[i] < cmp)
                 print(valoresRand[i]+" < "+cmp);
             else
                 print(valoresRand[i]+" = "+cmp);
+            
+            if(i==10){
+               s = false;
+               break;
+            }
             i++;
         }
     }

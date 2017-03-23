@@ -9,7 +9,7 @@ long
 */
 
 package com.orlandormx.capitulo3;
-import static com.orlandormx.util.Print.Print.*;
+import static com.orlandormx.util.Print.*;
 /**
  *
  * @author developer

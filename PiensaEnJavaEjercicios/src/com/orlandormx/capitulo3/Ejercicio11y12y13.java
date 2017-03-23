@@ -8,7 +8,7 @@
 DESCRIPCION EN LA PAG 84 DEL LIBRO
 */
 package com.orlandormx.capitulo3;
-import static com.orlandormx.util.Print.Print.*;
+import static com.orlandormx.util.Print.*;
 import java.util.*;
 /**
  *

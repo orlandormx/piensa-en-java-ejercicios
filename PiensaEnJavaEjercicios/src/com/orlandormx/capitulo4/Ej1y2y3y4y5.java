@@ -71,7 +71,7 @@ class Ej3{
                 print(valoresRand[i]+" = "+cmp);
             
             if(i==10){
-               s = false;
+               //s = false;
                break;
             }
             i++;

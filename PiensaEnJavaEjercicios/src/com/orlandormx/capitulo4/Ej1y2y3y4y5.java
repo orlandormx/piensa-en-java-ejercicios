@@ -16,6 +16,7 @@ public class Ej1y2y3y4y5 {
   //      Ej2.comparaValoresRand();
     //  tener cuidado entra a un bucle infinito
     //    Ej3.comparaValoresRandWhile();
+        Ej4.encuentraNumerosPrimos(410);
     }
 }
 
@@ -67,4 +68,33 @@ class Ej3{
             i++;
         }
     }
+}
+
+class Ej4{
+    static void encuentraNumerosPrimos(int limite){
+        int count = 0;
+        for(int i = 1; i < limite; i++){
+            for(int j = i; j>0; j--){
+                if(i%j == 0)
+                    count++;
+            }
+            if(count ==2){
+                print(i+" es primo");
+            }
+                
+            count = 0;
+        }
+    }
+    static void prueba(int x){
+        int count = 0;
+        for(int j = 1; j<=x; j++){
+            if(x%j==0)
+                count++;
+                
+        }
+        if(count==2){
+            print(x+" es primo");
+        }
+    }
+
 }

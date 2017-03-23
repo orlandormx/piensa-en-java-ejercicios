@@ -9,7 +9,7 @@ importando biblioteca estatica.
 */
 package com.orlandormx.capitulo3;
 
-import static net.mindview.util.Print.*;
+import static com.orlandormx.util.Print.Print.*;
 /**
  *
  * @author developer

@@ -8,7 +8,7 @@
 DESCRIPCION EN LA PAG 84 DEL LIBRO
 */
 package com.orlandormx.capitulo3;
-import static net.mindview.util.Print.*;
+import static com.orlandormx.util.Print.Print.*;
 import java.util.*;
 /**
  *

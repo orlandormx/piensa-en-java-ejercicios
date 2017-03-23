@@ -8,7 +8,7 @@ Se crea una clase con valor float para ilustar la creacion de alias
 */
 
 package com.orlandormx.capitulo3;
-import static net.mindview.util.Print.*;
+import static com.orlandormx.util.Print.Print.*;
 /**
  *
  * @author developer

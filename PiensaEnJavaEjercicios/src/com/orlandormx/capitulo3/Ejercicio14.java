@@ -4,20 +4,26 @@
  * and open the template in the editor.
  */
 package com.orlandormx.capitulo3;
+import static com.orlandormx.util.Print.*;
 /*
 DESCRIPCION EN LA PAG 96
 uso de comparaciones boolean con strings
-*/
+ */
 /**
  *
  * @author developer
  */
 public class Ejercicio14 {
-    static void compara(String s1, String s2){
     
-    }
-    
-    public static void main(String[] args) {
+    static void compara(String x, String y) {    
+        print("x == y "+ (x == y));
+        print("x != y "+ (x != y));
+        print("x equals y "+ x.equals(y));
+        print("x !equals y "+ !(x.equals(y)));
         
+    }
+
+    public static void main(String[] args) {
+        compara("hola","hola");
     }
 }

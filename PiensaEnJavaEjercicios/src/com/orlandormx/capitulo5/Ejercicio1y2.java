@@ -13,7 +13,7 @@ import static com.orlandormx.util.Print.*;
  *
  * @author developer
  */
-public class Ejercicio1 {
+public class Ejercicio1y2 {
     public static void main(String[] args) {
         ClaseString cs = new ClaseString();
         print(cs.s);

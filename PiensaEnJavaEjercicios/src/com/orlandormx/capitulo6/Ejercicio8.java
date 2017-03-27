@@ -20,7 +20,7 @@ public class Ejercicio8 {
 
 class ConnectionManager{
     static ArrayList<Connection> col = new ArrayList<>(5);    
-    int count = 0;
+    
     
     private ConnectionManager(){
         for(int i = 0; i < col.size(); i++){
@@ -29,8 +29,10 @@ class ConnectionManager{
     }
 
     public static Connection makeConnection(){
-        return col.get(count);
-        count++;
+        if(col.size() < 5)
+            return col.get(0);
+        else
+        
     }
 }
 

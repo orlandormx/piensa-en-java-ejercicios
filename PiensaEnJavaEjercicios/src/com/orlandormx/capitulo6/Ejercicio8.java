@@ -19,7 +19,7 @@ public class Ejercicio8 {
 }
 
 class ConnectionManager{
-    ArrayList<Connection> col = new ArrayList<>(5);    
+    static ArrayList<Connection> col = new ArrayList<>(5);    
     int count = 0;
     
     private ConnectionManager(){
@@ -29,7 +29,8 @@ class ConnectionManager{
     }
 
     public static Connection makeConnection(){
-        return new Connection();
+        return col.get(count);
+        count++;
     }
 }
 

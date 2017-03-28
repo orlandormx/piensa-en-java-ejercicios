@@ -32,6 +32,10 @@ class Cycle{
     void moveon(){
         print("move cycle");
     }
+    
+    String wheels(){
+        return "num de llantas: "+llantas;
+    }
 }
 
 class Unicycle extends Cycle{
@@ -71,6 +75,7 @@ class Tricycle extends Cycle{
 class PistaBicis{
     static void run(Cycle c){
         c.moveon();
+        print(c.wheels());
     }
 
 }

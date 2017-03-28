@@ -7,4 +7,10 @@ public class Square extends Shape {
   public void draw() { print("Square.draw()"); }
   @Override
   public void erase() { print("Square.erase()"); }
-} ///:~
+
+    @Override
+    public void mensaje() {
+        print("square mensagge");
+    }
+  
+} 

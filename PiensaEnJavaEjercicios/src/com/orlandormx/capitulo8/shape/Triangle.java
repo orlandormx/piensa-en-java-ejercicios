@@ -7,4 +7,10 @@ public class Triangle extends Shape {
   public void draw() { print("Triangle.draw()"); }
   @Override
   public void erase() { print("Triangle.erase()"); }
-} ///:~
+
+    @Override
+    public void mensaje() {
+        print("triangle mesagge");
+    }
+  
+}

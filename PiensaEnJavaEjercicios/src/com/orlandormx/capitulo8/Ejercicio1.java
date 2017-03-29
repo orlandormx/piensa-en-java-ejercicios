@@ -15,10 +15,18 @@ public class Ejercicio1 {
         Bicycle b = new Bicycle(2);
         Tricycle t = new Tricycle(3);
         
+        Cycle[] cycles = { new Unicycle(1),
+                new Bicycle(2),
+                new Tricycle(3)
+        };
+        
         PistaBicis.run(u);
         PistaBicis.run(b);
         PistaBicis.run(t);
+        System.out.println("");
         
+        ((Unicycle)cycles[0]).balance();
+        ((Bicycle)cycles[1]).balance();
     }
 }
 
@@ -47,6 +55,10 @@ class Unicycle extends Cycle{
     void moveon(){
         print("move unicycle");
     }
+    
+    void balance(){
+        print("Unicycle.balance()");
+    }
 }
 
 class Bicycle extends Cycle{
@@ -58,7 +70,9 @@ class Bicycle extends Cycle{
         print("move bicycle");
     }
     
-    
+    void balance(){
+        print("Bicycle.balance()");
+    }
 }
 
 class Tricycle extends Cycle{

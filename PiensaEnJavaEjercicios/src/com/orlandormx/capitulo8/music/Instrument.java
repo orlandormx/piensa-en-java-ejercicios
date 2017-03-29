@@ -6,7 +6,7 @@ class Instrument {
   void play(Note n) {
     print("Instrument.play() "+n);
   }
-  String what() { return "Instrument"; }
+  public String toString() { return "Instrument"; }
   void adjust() { print("Adjusting Instrument"); }
 }
  ///:~

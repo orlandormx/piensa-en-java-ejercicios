@@ -10,7 +10,10 @@ import static com.orlandormx.util.Print.*;
  * @author developer
  */
 public class Percussion extends Instrument{
+    @Override
     void play(Note n) { print("Percussion.play() " + n); }
-    String what() { return "Percussion"; }
+    @Override
+    public String toString() { return "Percussion"; }
+    @Override
     void adjust() { print("Adjusting Percussion"); }
 }

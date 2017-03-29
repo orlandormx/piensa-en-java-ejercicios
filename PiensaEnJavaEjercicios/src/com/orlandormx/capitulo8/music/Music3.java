@@ -21,14 +21,34 @@ public class Music3 {
       tune(i);
   }	
   public static void main(String[] args) {
-    // Upcasting during addition to the array:
+    RandomInstrumentGenerator r = new RandomInstrumentGenerator();
+    
+// Upcasting during addition to the array:
     Instrument[] orchestra = {
       new Wind(),
       new Percussion(),
       new Stringed(),
       new Brass(),
-      new Woodwind()
+      new Woodwind(),
+      new Violin()
     };
+    
+    Instrument[] orchestraRandom = new Instrument[10];
+    
+    for( int i = 0; i < orchestraRandom.length; i++){
+        orchestraRandom[i]= r.next();
+    }
     tuneAll(orchestra);
+    
+    for(Instrument i : orchestra){
+        System.out.println(i);
+    }
+      System.out.println("");
+      
+    tuneAll(orchestraRandom);
+    
+    for(Instrument i : orchestraRandom){
+        System.out.println(i);
+    }
   }
 }

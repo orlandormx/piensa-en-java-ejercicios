@@ -10,7 +10,29 @@ import static com.orlandormx.util.Print.*;
  * @author developer
  */
 public class Stringed extends Instrument{
+    @Override
     void play(Note n) { print("Stringed.play() " + n); }
-    String what() { return "Stringed"; }
+    @Override
+    public String toString() { return "Stringed"; }
+    @Override
     void adjust() { print("Adjusting Stringed"); }
+}
+
+class Violin extends Stringed{
+
+    @Override
+    void adjust() {
+        print("Adjusting Violin");
+    }
+
+    @Override
+    public String toString() {
+       return "Violin";
+    }
+
+    @Override
+    void play(Note n) {
+         print("Violin.play() " + n);
+    }
+    
 }

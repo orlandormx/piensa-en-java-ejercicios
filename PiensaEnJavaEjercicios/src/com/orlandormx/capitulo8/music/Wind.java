@@ -6,20 +6,27 @@ import static com.orlandormx.util.Print.*;
 // because they have the same interface:
 public class Wind extends Instrument {
   // Redefine interface method:
+  @Override
   void play(Note n) {
     System.out.println("Wind.play() " + n);
   }
-  String what() { return "Wind"; }
+  @Override
+  public String toString() { return "Wind"; }
+  @Override
   void adjust() { print("Adjusting Wind"); }
   
 }
 
 class Brass extends Wind {
+  @Override
   void play(Note n) { print("Brass.play() " + n); }
+  @Override
   void adjust() { print("Adjusting Brass"); }
 }
 
 class Woodwind extends Wind {
+  @Override
   void play(Note n) { print("Woodwind.play() " + n); }
-  String what() { return "Woodwind"; }
+  @Override
+  public String toString() { return "Woodwind"; }
 }

@@ -9,9 +9,9 @@ import static com.orlandormx.util.Print.*;
  *
  * @author developer
  */
-public class Percussion extends Instrument{
+public class Percussion extends Instrument implements Playable{
     @Override
-    void play(Note n) { print("Percussion.play() " + n); }
+    public void play(Note n) { print("Percussion.play() " + n); }
     @Override
     public String toString() { return "Percussion"; }
     @Override

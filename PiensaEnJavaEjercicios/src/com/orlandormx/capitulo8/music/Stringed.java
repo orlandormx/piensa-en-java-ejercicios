@@ -9,9 +9,9 @@ import static com.orlandormx.util.Print.*;
  *
  * @author developer
  */
-public class Stringed extends Instrument{
+public class Stringed extends Instrument implements Playable{
     @Override
-    void play(Note n) { print("Stringed.play() " + n); }
+    public void play(Note n) { print("Stringed.play() " + n); }
     @Override
     public String toString() { return "Stringed"; }
     @Override
@@ -31,7 +31,7 @@ class Violin extends Stringed{
     }
 
     @Override
-    void play(Note n) {
+    public void play(Note n) {
          print("Violin.play() " + n);
     }
     

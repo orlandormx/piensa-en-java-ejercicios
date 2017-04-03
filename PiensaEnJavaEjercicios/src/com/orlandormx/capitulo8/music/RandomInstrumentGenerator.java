@@ -14,7 +14,7 @@ import java.util.Random;
 public class RandomInstrumentGenerator {
     private Random r = new Random(47);
     
-    public Instrument next(){
+    public Playable next(){
         switch(r.nextInt(6)){
             default:
             case 0:

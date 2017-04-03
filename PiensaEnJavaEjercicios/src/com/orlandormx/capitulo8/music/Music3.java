@@ -12,19 +12,19 @@ package com.orlandormx.capitulo8.music;
 public class Music3 {
     // Doesn't care about type, so new types
   // added to the system still work right:
-  public static void tune(Instrument i) {
+  public static void tune(Playable p) {
     // ...
-    i.play(Note.MIDDLE_C);
+    p.play(Note.MIDDLE_C);
   }
-  public static void tuneAll(Instrument[] e) {
-    for(Instrument i : e)
-      tune(i);
+  public static void tuneAll(Playable[] e) {
+    for(Playable p : e)
+      tune(p);
   }	
   public static void main(String[] args) {
     RandomInstrumentGenerator r = new RandomInstrumentGenerator();
     
 // Upcasting during addition to the array:
-    Instrument[] orchestra = {
+    Playable[] orchestra = {
       new Wind(),
       new Percussion(),
       new Stringed(),
@@ -33,21 +33,21 @@ public class Music3 {
       new Violin()
     };
     
-    Instrument[] orchestraRandom = new Instrument[10];
+    Playable[] orchestraRandom = new Playable[10];
     
     for( int i = 0; i < orchestraRandom.length; i++){
         orchestraRandom[i]= r.next();
     }
     tuneAll(orchestra);
     
-    for(Instrument i : orchestra){
+    for(Playable i : orchestra){
         System.out.println(i);
     }
       System.out.println("");
       
     tuneAll(orchestraRandom);
     
-    for(Instrument i : orchestraRandom){
+    for(Playable i : orchestraRandom){
         System.out.println(i);
     }
   }

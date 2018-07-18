@@ -10,5 +10,5 @@ package com.orlandormx.capitulo2;
  * @author developer
  */
 public class Ejercicio1 {
-    
+    //comentario
 }
